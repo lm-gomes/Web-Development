@@ -1,96 +1,12 @@
-.header{
-    margin-top: -10px;
-    padding: 10px;
-    height: 50%;
-
+body{
+    background-image: url('img/fundo.png');
 }
 
-.top-header{
-    background-color: purple;
-    margin-top: -10px;
-    padding: 25px;
-    height: 50%;
-    display:flex;
-    justify-content: space-between;
-
+header{
+    display: inline-block;
+    
 }
 
-.header-brand{
-    width: 10em;
+.header-menu{
+    background-color: #e0e5bd;
 }
-
-.search-bar{
-    margin-top: 10px;
-    width: 500px;
-    height: 50px;
-    border-radius: 25px;
-}
-
-.navegator-header{
-    display: flex;
-}
-
-.nav-icon{
-    height: 100%;
-    width: 100%;
-}
-
-.option{
-
-    width: 2em;
-    height: 2em;
-}
-
-.header-categories{
-    display: flex;
-    background-color: black;
-    width: 100%;
-
-}
-
-.nav-cat{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.h-cat-op{
-    color: white;
-    padding: 2px;
-}
-
-.h-cat-op:hover{
-    font-weight:bolder;
-}
-
-main{
-    display: flex;
-
-}
-
-.sneakers-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 38%;
-
-}
-
-
-
-.main-sec-fig{
-    width: 100%;
-
-
-}
-
-.pc-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 38%;
-
-
-}
-
-
