@@ -6,8 +6,9 @@ body{
 
 }
 
-h1{
-    margin-left: 5%;
+.logo{
+    margin-top: 1%;
+    height: 70%;
 }
 
 ul li{
@@ -26,27 +27,38 @@ header{
     display: flex;
     justify-content: space-between;
     margin: 0px;
-    background-color: blue;
+    background-color: white;
     height: 20vh;
     width: 100vw;
+    border-bottom: 1px solid black;
 }
 
 section{
     display: flex;
     flex-wrap:inherit;
-    background-color: red;
+    background-color: white;
+    border-bottom: 1px solid black;
 
 }
 
 .block{
-    box-shadow: 10px 10px darkred;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px gray;
     border-radius: 5px;
+}
+
+.block-img{
+    max-width: 90%;
+    max-height: 70%;
 }
 
 @media only screen and (min-width: 600px){
     .block{
         display: flex;
-        background-color: gray;
+        background-color: lightgray;
         height: 50vh;
         width: 50vh;
         margin: 2%;
@@ -59,12 +71,13 @@ section{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
 
     }
 
     .block{
         display: flex;
-        background-color: gray;
+        background-color: lightgray;
         height: 50vh;
         width: 80vh;
         margin: 2%;
@@ -72,6 +85,6 @@ section{
 }
 
 footer{
-    background-color: blue;
+    background-color: lightgray;
 }
 
