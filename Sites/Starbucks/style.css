@@ -1,0 +1,156 @@
+body{
+    margin: 0px;
+    
+}
+
+.background{
+    background-image: url("img/background.jpg");
+    background-size: cover;
+
+    filter:brightness(30%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.text{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 10vh;
+    position: absolute;
+    top: 10%;
+    right: 40%;
+    background-color: red;
+    width: 50vw;
+}
+
+.menu{
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.menu::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#welcome{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: oklch(43.2% 0.095 166.913);
+    font-family: "Special Gothic Expanded One", sans-serif;
+    height: 10%;
+    color: white;
+    font-size: 4vw;
+    padding: 5px;
+    z-index: 2;
+}
+
+.login{
+    
+    z-index: 2;
+    filter:brightness(100%);
+    top: 10px;
+    background-color: oklch(43.2% 0.095 166.913);
+    background-image: linear-gradient(oklch(43.2% 0.095 166.913), oklch(26.2% 0.051 172.552));
+    width: 30vw;
+    height: 100vh;
+    box-shadow: 6px 6px oklch(26.2% 0.051 172.552);
+    
+    display: flex;
+    gap: 30%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-width: 0px 0px 0px 5px;
+    border-color: white;
+    border-style: solid;
+
+
+
+}
+
+#logo{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+    margin-left: 15%;
+
+}
+
+img{
+    width:   50%;
+}
+
+.form{
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    gap: 10%;
+    margin-left: 11%;
+    margin-bottom: 13%;
+    width: 60%;
+    
+    
+}
+
+.input-names{
+
+    font-size: 18px;
+    width: 20%;    
+}
+
+.input-bars{
+    padding: 10px 0px 10px 0px;
+
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+    justify-content: center;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+#log{
+    width: 100%;
+    height: 30%;
+
+}
+
+#senha{
+    width: 100%;
+    height: 30%;
+
+}
+
+.button{
+    background-color: oklch(43.2% 0.095 166.913);
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button:hover{
+    background-color: white;
+    color: oklch(43.2% 0.095 166.913);
+
+}
