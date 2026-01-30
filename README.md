@@ -15,4 +15,4 @@ This is my first Web-Development project after some HTML classes: A small html-b
 Here are some web-sites I created when practicing CSS:
 
 ## StarBucks Login Page
-<img width="1364" height="655" alt="login_page" src="https://github.com/user-attachments/assets/bbe7b3c3-eb2c-4e2f-9936-e31b57acc3c2" />
+<img width="1919" height="965" alt="image" src="https://github.com/user-attachments/assets/bc1f38fb-7878-4cc2-b3e1-a4ff4414161a" />
