@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    width: 67vw;
+    height: 100vh;
+    background-color: orange;
+}
+
+header{
+    display: flex;
+    gap: 20%;
+    flex-direction: row;
+    background-color: blue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+
+.logo{
+    width: 30%;
+    left: -100px;
+}
+
+ul{
+    display: flex;
+    width: 60%;
+    gap: 2%;
+    list-style: none;
+    background-color: green;
+    align-items: center;
+
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+
+}
