@@ -15,11 +15,12 @@ body{
 header{
     display: flex;
     height: 12vh;
-    gap: 20%;
+    gap: 25%;
     flex-direction: row;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 11px;
+    padding: 0px;
     
 }
 
@@ -47,13 +48,16 @@ li{
 }
 
 .store{
-
+    padding: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .main-sections{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -81,11 +85,49 @@ li{
     color: oklch(43.2% 0.095 166.913);
 }
 
+.box-2 .button-about-2{
+    font-size: 14px;
+    color: white;
+}
+
 .box-1-fig{
-    width: 50%;
+    width: 54.3%;
 
 }
 
+.box-2{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+    font-weight: bolder;
+    text-align: center;
+    width: 50%;
+    object-fit: fill;
+    background-color: #E9F7F4;
+}
+
+.box-3{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+    font-weight: bolder;
+    text-align: center;
+    width: 50%;
+    object-fit: fill;
+    background-color: #F2EDDC;
+}
+
+.box-3 .button-about-2{
+    color: white;
+}
 
 
 .coffee{
@@ -98,5 +140,24 @@ li{
     background-color: white;
     padding: 10px;
     border-radius: 50px;
+}
+
+.button-about-2{
+    background-color: #324A32;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.section-2{
+    display: flex;
+}
+
+.section-3{
+    display: flex;
+}
+
+.board{
+    width: 100%;
+    object-fit: cover;
 }
 
