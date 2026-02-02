@@ -22,7 +22,7 @@ header{
     flex-direction: row;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 14px;
     padding: 0px;
     
 }
@@ -126,7 +126,7 @@ li{
     width: 50%;
     object-fit: fill;
     background-color: #F2EDDC;
-}    flex-direction: column;
+}   
 
 .box-3 .button-about-2{
     color: white;
@@ -186,13 +186,18 @@ li{
 }
 
 .div-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 10px;
+    width: 50%;
     
 }
 
 .div-footer ul{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
     text-decoration: underline;
     color: gray;
@@ -201,4 +206,58 @@ li{
 .div-footer li{
     padding: 0px;
     text-align: left;
+}
+
+#footer-2{
+    width: 67vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+figure{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.starbucks-letter{
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+}
+.footer-icons{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+.icon-parent{
+    display: flex;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.icon{
+    object-fit: cover;
+    width: 30px;
+}
+
+.footer-options{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    gap: 5%;
+    width: 100%;
+}
+
+.footer-options p{
+    color: gray;
+    text-decoration: underline;
+    width: 50%;
 }
