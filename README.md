@@ -16,3 +16,9 @@ Here are some web-sites I created when practicing CSS:
 
 ## StarBucks Login Page
 <img width="1919" height="965" alt="image" src="https://github.com/user-attachments/assets/bc1f38fb-7878-4cc2-b3e1-a4ff4414161a" />
+
+## StarBucks Main Page
+<img width="1858" height="963" alt="image" src="https://github.com/user-attachments/assets/48f4080a-6577-458b-be26-4d8f781c1ebd" />
+<img width="1849" height="962" alt="image" src="https://github.com/user-attachments/assets/8a6e4cc2-f625-46bd-ae5c-660504d62359" />
+
+
