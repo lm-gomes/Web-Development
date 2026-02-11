@@ -1,3 +1,6 @@
+Every project in this repository was made from scratch, taking websites as visual references for replication. Every line was handmade, using my own logic.
+The idea of this repository is to improve my Web-Dev skills, so I don't recommend to follow my code blindly, but you can be in touch for any tips for me to improve.
+
 # UFC-Crateus-HTML
 This is my first Web-Development project after some HTML classes: A small html-based project made using the Federal University of Ceará as inspiration.
 
