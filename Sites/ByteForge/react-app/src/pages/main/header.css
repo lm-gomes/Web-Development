@@ -22,7 +22,7 @@ header{
 }
 
 nav{
-    background-color: blue;
+
     margin: 0;
     padding: 0;
     
@@ -33,12 +33,11 @@ ul{
     justify-content: center;
     flex-direction: row;
     
-    background-color: red;
     
 }
 
 li{
-    background-color: green;
+
 
     padding-left: 11%;
     padding-right: 11%;
@@ -51,5 +50,9 @@ li{
     list-style: none;
     font-weight: bolder;
     
+    transition: background-color 0.5s;
+}
 
+li:hover{
+    background-color: #F2E95E;
 }

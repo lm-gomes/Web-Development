@@ -1,0 +1,263 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#main{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 67vw;
+    height: 100vh;
+
+}
+
+header{
+    display: flex;
+    height: 12vh;
+    width: 100%;
+    gap: 25%;
+    flex-direction: row;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0px;
+    
+}
+
+.logo{
+    width: 60px;
+}
+
+ul{
+    display: flex;
+    padding: 0px;
+    width: 60%;
+    gap: 4%;
+    list-style: none;
+
+    align-items: center;
+
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.store{
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-sections{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-1{
+    display: flex;
+}
+
+.box-1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+    font-weight: bolder;
+    text-align: center;
+    width: 50%;
+    object-fit: fill;
+    background-color: #324A32;
+}
+
+.box-1 .button-about{
+    font-size: 14px;
+    color: oklch(43.2% 0.095 166.913);
+}
+
+.box-2 .button-about-2{
+    font-size: 14px;
+    color: white;
+}
+
+.box-1-fig{
+    width: 54.3%;
+
+}
+
+.box-2{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+    font-weight: bolder;
+    text-align: center;
+    width: 50%;
+    object-fit: fill;
+    background-color: #E9F7F4;
+}
+
+.box-3{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+    font-weight: bolder;
+    text-align: center;
+    width: 50%;
+    object-fit: fill;
+    background-color: #F2EDDC;
+}   
+
+.box-3 .button-about-2{
+    color: white;
+}
+
+
+.coffee{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-about{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.button-about-2{
+    background-color: #324A32;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.section-2{
+    display: flex;
+}
+
+.section-3{
+    display: flex;
+}
+
+.board{
+    width: 100%;
+    object-fit: cover;
+}
+
+#footer-1{
+    display: flex;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+
+    flex-direction: row;
+    gap: 20%;
+    margin-top: 3%;
+    border-style: solid;
+    border: 0px 1px 0px 1px;
+    border-width: 1px;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: flex-start;
+    width: 67vw;
+    gap: 5%;
+}
+
+.div-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 50%;
+    
+}
+
+.div-footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    text-decoration: underline;
+    color: gray;
+}
+
+.div-footer li{
+    padding: 0px;
+    text-align: left;
+}
+
+#footer-2{
+    width: 67vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+figure{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.starbucks-letter{
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+}
+.footer-icons{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+.icon-parent{
+    display: flex;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.icon{
+    object-fit: cover;
+    width: 30px;
+}
+
+.footer-options{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    gap: 5%;
+    width: 100%;
+}
+
+.footer-options p{
+    color: gray;
+    text-decoration: underline;
+    width: 50%;
+}
