@@ -34,7 +34,7 @@ function Main(){
                     </figure>
                     <div className="text-course">
                         <h2>Cursos</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat, ipsam doloribus sint, quaerat, ullam veniam voluptatem debitis hic nesciunt nostrum animi molestias sequi ex repellendus! Animi dolor possimus odit?</p>
+                        <p className="course-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat, ipsam doloribus sint, quaerat, ullam veniam voluptatem debitis hic nesciunt nostrum animi molestias sequi ex repellendus! Animi dolor possimus odit?</p>
                     </div>
                 </div>
             </section>

@@ -99,23 +99,27 @@
     justify-content: center;
     align-items: center;
 
+    background-color: #F2E95E;
+
 }
 
 .sec-section-div{
     display: flex;
-    background-color: blue;
+    border-radius: 700px;
     width: 80%;
     height: 50%;
+    background-color: white;
+    box-shadow: 10px 10px gray;
 }
 
 .img-course-div{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 40%;
     height: 100%;
 
-    background-color: red;
+
 }
 
 .img-course{
@@ -127,10 +131,22 @@
     border-color: yellow;
 }
 
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px;
+    font-size: 25px;
+
+}
+
 .text-course{
     padding: 5%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.text-course p{
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px gray;
 }
 
 
