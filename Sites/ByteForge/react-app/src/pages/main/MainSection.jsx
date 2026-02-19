@@ -2,6 +2,8 @@ import { useState } from "react";
 import slide1 from '../../img/last_news.jpg';
 import slide2 from '../../img/robot.jpg'
 import slide3 from '../../img/oculus.jpg'
+import illustration from '../../img/illustration.jpg'
+import course from '../../img/course.jpg'
 import './mainsection.css';
 
 
@@ -15,8 +17,8 @@ function Main(){
     ]
 
     return(
-        <div>
-            <section>
+        <div className="main">
+            <section className="first-section">
                 <div className="img-container">
                     <img src={slides[current]} className="lastnews"></img>
                     <p className="lastnews-text">{texts[current]}</p>
@@ -25,8 +27,16 @@ function Main(){
                     <button className="right-button" onClick={() => setCurrent(current === slides.length - 1 ? 0 : current + 1)}></button>
                 </div>
             </section>
-            <section>
-                
+            <section className="second-section">
+                <div className="sec-section-div">
+                    <figure className="img-course-div">
+                        <img className="img-course"src={course}></img>
+                    </figure>
+                    <div className="text-course">
+                        <h2>Cursos</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat, ipsam doloribus sint, quaerat, ullam veniam voluptatem debitis hic nesciunt nostrum animi molestias sequi ex repellendus! Animi dolor possimus odit?</p>
+                    </div>
+                </div>
             </section>
         </div>
     );

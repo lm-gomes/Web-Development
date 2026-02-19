@@ -3,7 +3,12 @@
 
 }
 
-section{
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+
+.first-section{
     display: flex;
     flex-direction: column;
     background-color: red;
@@ -85,3 +90,48 @@ section{
 
     cursor: pointer;
 }
+
+.second-section{
+    display: flex;
+    position: relative;
+    height: 70%;
+    isolation: isolate;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec-section-div{
+    display: flex;
+    background-color: blue;
+    width: 80%;
+    height: 50%;
+}
+
+.img-course-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+
+    background-color: red;
+}
+
+.img-course{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border-style: outset;
+    border-width: 10px;
+    border-color: yellow;
+}
+
+.text-course{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+    
