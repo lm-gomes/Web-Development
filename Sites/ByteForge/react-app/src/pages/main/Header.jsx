@@ -7,7 +7,7 @@ function Header(){
     return(
         <div className="header-div">
             <header>
-                <h1>BYTEFORGE</h1>
+                <h1 className="b1">BYTE</h1><h1 className='b2'>FORGE</h1>
             </header>
             <nav>
                 <ul>

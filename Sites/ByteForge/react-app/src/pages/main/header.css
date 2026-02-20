@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Special+Gothic+Expanded+One&display=swap');
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -20,6 +21,22 @@ header{
 
     background-color: #F2E95E;
 }
+
+h1{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.b1{
+    color: black;
+}
+.b2{
+    color: white;
+    text-shadow: 1px 1px 2px gray;
+}
+
+
 
 nav{
 
@@ -44,9 +61,9 @@ li{
     padding-top: 1%;
     padding-bottom: 1%;
 
-
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 
     list-style: none;
     font-weight: bolder;

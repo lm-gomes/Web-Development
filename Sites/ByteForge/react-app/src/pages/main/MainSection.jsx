@@ -2,8 +2,7 @@ import { useState } from "react";
 import slide1 from '../../img/last_news.jpg';
 import slide2 from '../../img/robot.jpg'
 import slide3 from '../../img/oculus.jpg'
-import illustration from '../../img/illustration.jpg'
-import course from '../../img/course.jpg'
+import news from '../../img/news.jpg'
 import './mainsection.css';
 
 
@@ -29,12 +28,13 @@ function Main(){
             </section>
             <section className="second-section">
                 <div className="sec-section-div">
-                    <figure className="img-course-div">
-                        <img className="img-course"src={course}></img>
+                    <figure className="news-figure">
+                        <h2>Últimas notícias</h2>
+                        <img className="news-img" src={news}></img>
                     </figure>
-                    <div className="text-course">
-                        <h2>Cursos</h2>
-                        <p className="course-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat, ipsam doloribus sint, quaerat, ullam veniam voluptatem debitis hic nesciunt nostrum animi molestias sequi ex repellendus! Animi dolor possimus odit?</p>
+                    <div className="news-text">
+                        <h2>Título da notícia</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laudantium excepturi ut similique odio blanditiis quae ex illum asperiores, hic deleniti debitis autem quod qui, eveniet aut ipsa consequatur eligendi.</p>
                     </div>
                 </div>
             </section>
