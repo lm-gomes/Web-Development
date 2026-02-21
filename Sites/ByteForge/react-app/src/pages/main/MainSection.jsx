@@ -29,13 +29,22 @@ function Main(){
             </section>
             <section className="second-section">
                 <div className="sec-section-div">
-                    <figure className="news-figure">
+                    <figure className="main-news-figure">
                         <h2>Últimas notícias</h2>
                         <img className="news-img" src={news}></img>
                     </figure>
                     <div className="news-text">
-                        <h2>Título da notícia</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laudantium excepturi ut similique odio blanditiis quae ex illum asperiores, hic deleniti debitis autem quod qui, eveniet aut ipsa consequatur eligendi.</p>
+                        <div className="news-text-div">
+                            <h2>Título da notícia</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laudantium excepturi ut similique odio blanditiis quae ex illum asperiores, hic deleniti debitis autem quod qui, eveniet aut ipsa consequatur eligendi.</p>
+                        </div>
+                        <div className="news-figure-div">
+                            <figure className="news-figure"></figure>
+                            <figure className="news-figure"></figure>
+                            <figure className="news-figure"></figure>
+                            <figure className="news-figure"></figure>
+
+                        </div>
                     </div>
                 </div>
             </section>
