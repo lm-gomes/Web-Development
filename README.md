@@ -25,3 +25,9 @@ Here are some web-sites I created when practicing CSS:
 <img width="1849" height="962" alt="image" src="https://github.com/user-attachments/assets/8a6e4cc2-f625-46bd-ae5c-660504d62359" />
 
 
+# React
+Websites created when learning React concepts (HTML, CSS, JS)
+<img width="1918" height="964" alt="image" src="https://github.com/user-attachments/assets/3f80cb36-54f7-4295-8dc6-d9ed644f9d85" />
+
+
+
