@@ -64,13 +64,17 @@ li{
     border-top: 2px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    border-bottom: 2px solid black;
 
     list-style: none;
     font-weight: bolder;
     
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, color 0.2s;
+    cursor: pointer;
 }
 
 li:hover{
     background-color: #F2E95E;
+    color: white;
+    text-shadow: 1px 1px 2px gray;
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import slide1 from '../../img/last_news.jpg';
 import slide2 from '../../img/robot.jpg'
 import slide3 from '../../img/oculus.jpg'
