@@ -6,6 +6,8 @@ import slide3 from '../../img/oculus.jpg'
 import news from '../../img/news.jpg'
 import './mainsection.css';
 
+import Header from './Header.jsx'
+
 
 function Main(){
 
@@ -18,6 +20,7 @@ function Main(){
 
     return(
         <div className="main">
+            <Header/>
             <section className="first-section">
                 <div className="img-container">
                     <img src={slides[current]} className="lastnews"></img>
