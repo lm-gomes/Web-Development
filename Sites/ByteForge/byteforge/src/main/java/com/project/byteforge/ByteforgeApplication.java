@@ -1,0 +1,13 @@
+package com.project.byteforge;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ByteforgeApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ByteforgeApplication.class, args);
+	}
+
+}
