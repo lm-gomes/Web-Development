@@ -5,6 +5,7 @@ import './login.css'
 
 function Login(){
     const navigate = useNavigate();
+    const [loginSuccess, setLoginSuccess] = useState(null);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -12,18 +13,47 @@ function Login(){
         const userLogin = e.target.userLogin.value;
         const userPassword = e.target.userSenha.value;
 
-        if(userLogin == 'admin' && userPassword == '123'){
-            alert('Correto!');
-            navigate('/');
+        const response = await fetch('http://localhost:8080/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                login: userLogin,
+                senha: userPassword
+            })
+        });
+
+        const data = await response.json();
+
+        if(data.success === true){
+            console.log('Login bem-sucedido');
+            setLoginSuccess(true);
+            setTimeout(() => navigate('/'), 2000);
+
+        } else{
+            console.log('Login falhou');
+            setLoginSuccess(false);
+            setTimeout(() => setLoginSuccess(null), 2000);
         }
-        else{
-            alert('Incorreto');
-        }
-        
     }
 
     return(
     <div className='body'>
+        {loginSuccess && (
+            <div className='login-success'>
+                <h1>Login bem-sucedido!</h1>
+            </div>
+        )}
+
+        {loginSuccess == false && (
+            <div className='login-success'>
+                <h1>Login ou senha incorreto!</h1>
+            </div>
+         )
+        }
+
+
         <section className='login-section'>
             <div className='login-div'>
                 <h1>Bem-vindo de volta!</h1>
