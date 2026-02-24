@@ -55,20 +55,30 @@ function Login(){
 
 
         <section className='login-section'>
+            <div className='title'>
+                <h1 className="b1">BYTE</h1><h1 className='b2'>FORGE</h1>
+            </div>
             <div className='login-div'>
-                <h1>Bem-vindo de volta!</h1>
+                <h1>Bem-vindo de volta!</h1><br/><br/>
                 <form className='login-form' onSubmit={handleSubmit}>
-                    <p>Login</p>
-                    <input className="userLogin" type="text" placeholder='Login' name='userLogin'></input>
-                    <p>Senha</p>
-                    <input className="userLogin" type="password" placeholder='Senha' name='userSenha'></input>
+                    <div className='inputs-form'>
+                        <p>Login</p>
+                        <input className="userLogin" type="text" placeholder='Login' name='userLogin'></input>
+                        <p>Senha</p>
+                        <input className="userLogin" type="password" placeholder='Senha' name='userSenha'></input>
+                    </div>
                     <button className="button" type='submit'>Entrar</button>
+                    <div className='new-account'>
+                        <p>Ainda não possui uma conta?</p>
+                        <p>Clique aqui para criar uma</p>
+                    </div>
                 </form>
+
             </div>
         </section>
         <aside className='side-image'>
             <figure className='image-figure'>
-                <img src={illustration}></img>
+                <img className='illustration' src={illustration}></img>
             </figure>
         </aside>
     </div>
