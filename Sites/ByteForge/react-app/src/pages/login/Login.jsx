@@ -5,6 +5,7 @@ import './login.css'
 
 function Login(){
     const navigate = useNavigate();
+    const [loginSuccess, setLoginSuccess] = useState(null);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -12,33 +13,72 @@ function Login(){
         const userLogin = e.target.userLogin.value;
         const userPassword = e.target.userSenha.value;
 
-        if(userLogin == 'admin' && userPassword == '123'){
-            alert('Correto!');
-            navigate('/');
+        const response = await fetch('http://localhost:8080/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                login: userLogin,
+                senha: userPassword
+            })
+        });
+
+        const data = await response.json();
+
+        if(data.success === true){
+            console.log('Login bem-sucedido');
+            setLoginSuccess(true);
+            setTimeout(() => navigate('/'), 2000);
+
+        } else{
+            console.log('Login falhou');
+            setLoginSuccess(false);
+            setTimeout(() => setLoginSuccess(null), 2000);
         }
-        else{
-            alert('Incorreto');
-        }
-        
     }
 
     return(
     <div className='body'>
+        {loginSuccess && (
+            <div className='login-success'>
+                <h1>Login bem-sucedido!</h1>
+            </div>
+        )}
+
+        {loginSuccess == false && (
+            <div className='login-success'>
+                <h1>Login ou senha incorreto!</h1>
+            </div>
+         )
+        }
+
+
         <section className='login-section'>
+            <div className='title'>
+                <h1 className="b1">BYTE</h1><h1 className='b2'>FORGE</h1>
+            </div>
             <div className='login-div'>
-                <h1>Bem-vindo de volta!</h1>
+                <h1>Bem-vindo de volta!</h1><br/><br/>
                 <form className='login-form' onSubmit={handleSubmit}>
-                    <p>Login</p>
-                    <input className="userLogin" type="text" placeholder='Login' name='userLogin'></input>
-                    <p>Senha</p>
-                    <input className="userLogin" type="password" placeholder='Senha' name='userSenha'></input>
+                    <div className='inputs-form'>
+                        <p>Login</p>
+                        <input className="userLogin" type="text" placeholder='Login' name='userLogin'></input>
+                        <p>Senha</p>
+                        <input className="userLogin" type="password" placeholder='Senha' name='userSenha'></input>
+                    </div>
                     <button className="button" type='submit'>Entrar</button>
+                    <div className='new-account'>
+                        <p>Ainda não possui uma conta?</p>
+                        <p>Clique aqui para criar uma</p>
+                    </div>
                 </form>
+
             </div>
         </section>
         <aside className='side-image'>
             <figure className='image-figure'>
-                <img src={illustration}></img>
+                <img className='illustration' src={illustration}></img>
             </figure>
         </aside>
     </div>
