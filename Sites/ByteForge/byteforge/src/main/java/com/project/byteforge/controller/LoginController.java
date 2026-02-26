@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.project.byteforge.model.LoginRequest;
-import com.project.byteforge.model.LoginResponse;
+
+import com.project.byteforge.model.RequestResponse;
 import com.project.byteforge.model.Usuario;
 import com.project.byteforge.service.DataService;
 
@@ -23,14 +23,23 @@ public class LoginController {
     DataService dataService = new DataService();
 
     @PostMapping("/login")
-    public LoginResponse login(@RequestBody LoginRequest request){
-        if ("admin".equals(request.getLogin()) && "123".equals(request.getSenha())) {
-            return new LoginResponse("Login bem-sucedido!", true);
+    public RequestResponse login(@RequestBody Usuario request){
+        if (dataService.verify(request)) {
+            return new RequestResponse("Login bem-sucedido!", true);
         } else {
-            return new LoginResponse("Login ou senha incorretos.", false);
+            return new RequestResponse("Login ou senha incorretos.", false);
         }
     }
 
+    @PostMapping("/register")
+    public RequestResponse register(@RequestBody Usuario request){
+        if(dataService.add(request) == 0){
+            return new RequestResponse("Registro feito!", true);
+        }
+        else{
+            return new RequestResponse("Ocorreu um erro no registro", false);
+        }
+    }
     
     
 

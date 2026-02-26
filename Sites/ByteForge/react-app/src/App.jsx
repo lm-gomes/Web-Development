@@ -7,6 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Main from './pages/main/MainSection.jsx'
 import About from './pages/about/AboutSection.jsx'
 import Login from './pages/login/Login.jsx'
+import Register from './pages/login/Register.jsx'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Main/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/login" element={<Login/>}></Route>
+          <Route path="/register" element={<Register/>}></Route>
         </Routes>
       </BrowserRouter>
     

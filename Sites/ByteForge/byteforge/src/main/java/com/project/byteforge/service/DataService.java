@@ -12,8 +12,32 @@ public class DataService {
 
     List<Usuario> usuarioList = new ArrayList<>();
 
-    public void add(Usuario usuario){
-        usuarioList.add(usuario);
+    public int add(Usuario usuario){
+        try{
+            usuarioList.add(usuario);
+            return 0;
+        }
+        catch(Exception e){
+            System.out.println(e);
+            return 1;
+        }
+    }
+
+    public boolean verify(Usuario usuario){
+        try{
+            for(int i = 0; i < usuarioList.size(); i++){
+                if(usuarioList.get(i).getLogin().equals(usuario.getLogin()) && usuarioList.get(i).getSenha().equals(usuario.getSenha())){
+                    return true;
+                }
+            }
+            return false;
+
+
+        }
+        catch(Exception e){
+            return false;
+        }
+
     }
 
 }
