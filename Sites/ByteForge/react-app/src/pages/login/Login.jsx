@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import illustration from '../../img/tech company-bro.svg'
-import './login.css'
+import './register.css'
 import InputData from '../../components/InputData.jsx'
 
 function Login(){
@@ -14,8 +14,7 @@ function Login(){
         const userLogin = e.target.userLogin.value;
         const userPassword = e.target.userSenha.value;
 
-        console.log("Login:" + userLogin)
-        console.log("Senha:" + userPassword)
+
 
         const response = await fetch('http://localhost:8080/login', {
             method: 'POST',
@@ -69,10 +68,12 @@ function Login(){
                         <InputData title='Login' classname='userLogin' name='userLogin' type='text' placeholder='Login'/>
                         <InputData title='Senha' classname='userLogin' name='userSenha' type='password' placeholder='Senha'/>
                     </div>
-                    <button className="button" type='submit'>Entrar</button>
-                    <div className='new-account'>
-                        <p>Ainda não possui uma conta?</p>
-                        <p style={{cursor: 'pointer'}} onClick={() => navigate('/register')}>Clique aqui para criar uma</p>
+                    <div className='button-text'>
+                        <button className="button" type='submit'>Entrar</button>
+                        <div className='new-account'>
+                            <p>Ainda não possui uma conta?</p>
+                            <p style={{cursor: 'pointer'}} onClick={() => navigate('/register')}>Clique aqui para criar uma</p>
+                        </div>
                     </div>
                 </form>
 

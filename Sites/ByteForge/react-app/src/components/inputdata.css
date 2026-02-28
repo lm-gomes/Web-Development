@@ -1,7 +1,13 @@
 .main-div{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 20%;
+
+}
+
+.input-divider{
+    width: 90%;
+    height: 50%;
 }
 
 .userLogin{
