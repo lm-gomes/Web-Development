@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+*{
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+
+}
+
+.main-page{
+    background-image: url("../img/figures/brownie-recipe.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------- HEADER ------------------------ */
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    background-color: #FFFBF5;
+}
+
+/* Icon */
+
+.header-icon{
+    display: flex;
+    gap: 50px;
+    width: 10%;
+    height: 80%;
+}
+
+.header-icon h1{
+    display: flex;
+    align-items: center;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(249, 116, 80);
+}
+
+.icon-parent{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+
+.icon-source{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;;
+}
+
+/* Search Bar   */
+.header-search{
+    margin-left: 18%;
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
+.search-bar{
+    font-size: 150%;
+}
+
+.search-bar{
+    width: 100%;
+    padding: 2%;
+    border-radius: 20px 0px 0px 20px;
+    border: 2px rgba(249, 116, 80) solid;
+}
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgba(249, 116, 80);
+    width: 8%;
+    margin: 0;
+    cursor: pointer;
+}
+
+.search-icon img{
+    transform: scaleX(-1);
+    object-fit: contain;
+    width: 60%;
+    height: 60%;
+}
+
+/* List of options */
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+}
+
+.header-li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(249, 116, 80);
+    list-style: none;
+    height: 100%;
+    width: 80%;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, text-decoration 0.3s;
+}
+
+.header-li:hover{
+    color: white;
+    background-color: rgba(249, 116, 80);
+    text-decoration: underline;
+}
+
+.header-li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgba(249, 116, 80);
+    transition: color 0.3s;
+}
+
+.header-li a:hover{
+    color: white;
+}
+
+/* ----------------------------- MAIN PAGE ----------------------------- */
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+
+
+    width: 70vw;
+    height: 100%;
+    background-color: bisque;
+}
+
+.recipe-title{
+    background-color: rgba(249, 116, 80);
+    color: white;
+    margin: 0px;
+    padding: 3%;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.recipe-title p{
+    font-size: 120%;
+    color: white;
+}
+
+.recipe-instructions{
+    display: flex;
+
+
+    width: 100%;
+    background-color: #FFFBF5;
+    margin: 0px;
+
+}
+
+.recipe-figure{
+    width: 50%;
+    padding: 2% 0%;
+}
+
+
+.recipe-figure figcaption{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.recipe-figure figcaption figure{
+    display: flex;
+    background-color: #FFFBF5;
+    padding: 15%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 50%;
+
+}
+
+.recipe-figure div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+
+}
+
+.recipe-figure p{
+    margin: 0px;
+
+}
+
+.recipe-figure img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.recipe-ingredients{
+    padding: 2% 0%;
+    width: 50%;
+    height: 80%;
+}
+
+.recipe-ingredients h3{
+    font-size: 180%;
+    margin: 2% 0%;
+    color: rgba(249, 116, 80);
+}
+
+.recipe-ingredients nav{
+    display: flex;
+    height: 100%;
+
+}
+
+.recipe-ingredients ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.recipe-ingredients li{
+    font-size: 150%;
+
+}
+
+.user-buttons{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.user-buttons button{
+
+}
+
+
+.recipe-steps{
+    background-color: #FFFBF5;
+    height: 100%;
+}
+
+.recipe-steps h3{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    background-color: rgba(249, 116, 80);
+    padding: 20px 20px;
+    font-size: 170%;
+    color: white;
+}
+
+.recipe-steps nav{
+
+}
+
+.recipe-steps ol{
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-steps li{
+    padding: 10px;
+    font-size: 120%;
+}
+
+.recipe-steps ol li::marker{
+    font-size: 150%;
+    font-weight: bolder;
+    color: rgba(249, 116, 80);
+}
+
+/* ----------------------- FOOTER ------------------------ */
+
+.main-footer{
+    height: 30%;
+
+}
+
+.footer-section1{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(249, 116, 80);
+    width:100%;
+    height: 30%;
+    color: white;
+    
+}
+
+.footer-title{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    width: 50%;
+    height: 100%;
+}
+
+.footer-title img{
+    object-fit: contain;
+    height: 70%;
+}
+
+.footer-title h2{
+    font-size: 28px;
+}
+
+.footer-section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(249, 116, 80);
+    height: 30%;
+    gap: 0.5%;
+}
+
+.footer-social{
+    width: 3%;
+    height: 100%;
+
+}
+
+.footer-social img{
+    border-radius: 200px;
+    padding: 0px;
+    border: 2px transparent solid;
+    object-fit: contain;
+    width: 100%;
+    height: 66%;
+    cursor: pointer;
+    transition: border 0.2s ease-in-out;
+}
+
+.footer-social img:hover{
+    border: 2px white solid;
+}
+
+.footer-section3{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: gray;
+}
