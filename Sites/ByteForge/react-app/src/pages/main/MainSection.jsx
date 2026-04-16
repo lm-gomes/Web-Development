@@ -21,6 +21,7 @@ function Main(){
     return(
         <div className="main">
             <Header/>
+                        {/*
             <section className="first-section">
                 <div className="img-container">
                     <img src={slides[current]} className="lastnews"></img>
@@ -30,6 +31,7 @@ function Main(){
                     <button className="right-button" onClick={() => setCurrent(current === slides.length - 1 ? 0 : current + 1)}></button>
                 </div>
             </section>
+
             <section className="second-section">
                 <div className="sec-section-div">
                     <figure className="main-news-figure">
@@ -51,6 +53,7 @@ function Main(){
                     </div>
                 </div>
             </section>
+            */}
         </div>
     );
 }

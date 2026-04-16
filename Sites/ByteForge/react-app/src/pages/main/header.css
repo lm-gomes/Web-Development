@@ -8,18 +8,36 @@
 .header-div{
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: 10vh;
 }
 
 
 header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 20px;
+    height: 100%;
+    background-color: #F2E95E;
+}
+
+.title-div{
+    height: 10%;
+    display: flex;
+}
+
+.icon-div{
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-    padding: 40px;
-    margin: 0px;
+    height: 100%;
+}
 
-    background-color: #F2E95E;
+img{
+    object-fit: contain;
+    height: 50%;
 }
 
 h1{

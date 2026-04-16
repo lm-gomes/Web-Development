@@ -9,6 +9,11 @@ services:
     security_opt:
       - label:disable
     build: ./react-app
+    volumes:
+      - ./react-app:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
     depends_on:
       - backend
     ports:

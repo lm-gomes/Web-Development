@@ -6,6 +6,7 @@ import './register.css'
 
 function Register(){
 
+    const [registerSuccess, setRegisterSuccess] = useState(null)
     const navigate = useNavigate();
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -38,10 +39,13 @@ function Register(){
             });
 
         const data = await response.json();
+
         if(data.success === true){
+            setRegisterSuccess(true);
             console.log("Cadastro realizado!");
         }
         else{
+            setRegisterSuccess(false);
             console.log("Falha ao cadastrar usuario...");
         }
 
@@ -51,6 +55,18 @@ function Register(){
 
     return(
         <div className='body'>
+            {registerSuccess && (
+                <div className='register-success'>
+                    <h1>Cadastro realizado!</h1>
+                </div>
+            )}
+
+            {registerSuccess == false && (
+                <div className='register-success'>
+                    <h1>Não foi possível fazer o cadastro.</h1>
+                </div>
+            )}
+
             <section className='login-section'>
                 <div className='title'>
                     <h1 className="b1">BYTE</h1><h1 className='b2'>FORGE</h1>
