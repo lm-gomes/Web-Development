@@ -8,6 +8,7 @@ import Main from './pages/main/MainSection.jsx'
 import About from './pages/about/AboutSection.jsx'
 import Login from './pages/login/Login.jsx'
 import Register from './pages/login/Register.jsx'
+import Products from './pages/products/Products.jsx'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About/>}></Route>
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/register" element={<Register/>}></Route>
+          <Route path="/products" element={<Products/>}></Route>
         </Routes>
       </BrowserRouter>
     

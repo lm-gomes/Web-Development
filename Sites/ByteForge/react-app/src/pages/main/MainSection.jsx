@@ -21,7 +21,6 @@ function Main(){
     return(
         <div className="main">
             <Header/>
-                        {/*
             <section className="first-section">
                 <div className="img-container">
                     <img src={slides[current]} className="lastnews"></img>
@@ -53,7 +52,6 @@ function Main(){
                     </div>
                 </div>
             </section>
-            */}
         </div>
     );
 }
