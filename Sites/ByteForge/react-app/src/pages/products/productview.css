@@ -1,0 +1,34 @@
+.productview-div{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.productview-div figure{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.productview-div figure img{
+    object-fit: fill;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.productview-div figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
